@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvestLM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page flex">
+
+        <!-- HEADER -->
+        <header class="header flex">
+            <div class="logo">InvestLM</div>
+
+            <div class="subtitle">
+                AI-powered financial risk & investment analysis
+            </div>
+
+            <nav class="nav-buttons flex">
+                <button id="generalBtn" class="mode-btn active">General</button>
+                <button id="riskBtn" class="mode-btn">Risk</button>
+                <button id="downloadBtn" class="download-btn">Download Chat</button>
+            </nav>
+        </header>
+
+        <!-- CHAT MESSAGES -->
+        <main class="chat-area" id="messages">
+            <div class="msg assistant">
+                Welcome! Select a mode and begin your financial analysis.
+            </div>
+
+            <!-- Typing indicator (used by JS) -->
+            <div id="typing" class="typing-indicator"></div>
+        </main>
+
+        <!-- INPUT BAR -->
+        <footer class="composer flex">
+            <input id="input" class="input" placeholder="Type your finance question here..." />
+
+            <button id="send" class="send-btn">Send</button>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
